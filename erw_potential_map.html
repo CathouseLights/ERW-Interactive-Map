@@ -11,51 +11,47 @@
     
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6cfa84313da79c506bcd321ec2a48485 {
+                #map_2a95e0ec651aa6c0c831efd14ed786c9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
                     left: 0.0%;
                     top: 0.0%;
                 }
-                .leaflet-container { font-size: 1rem; }
             </style>
         
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_6cfa84313da79c506bcd321ec2a48485" ></div>
+            <div class="folium-map" id="map_2a95e0ec651aa6c0c831efd14ed786c9" ></div>
         
 </body>
 <script>
     
     
-            var map_6cfa84313da79c506bcd321ec2a48485 = L.map(
-                "map_6cfa84313da79c506bcd321ec2a48485",
+            var map_2a95e0ec651aa6c0c831efd14ed786c9 = L.map(
+                "map_2a95e0ec651aa6c0c831efd14ed786c9",
                 {
-                    center: [20.0, 0.0],
+                    center: [10.0, 20.0],
                     crs: L.CRS.EPSG3857,
-                    ...{
-  "zoom": 2,
-  "zoomControl": true,
-  "preferCanvas": false,
-}
-
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
                 }
             );
 
@@ -63,305 +59,185 @@
 
         
     
-            var tile_layer_62b5f1ea0991ffaa0a388add1976db71 = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {
-  "minZoom": 0,
-  "maxZoom": 19,
-  "maxNativeZoom": 19,
-  "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
-  "subdomains": "abc",
-  "detectRetina": false,
-  "tms": false,
-  "opacity": 1,
-}
-
-            );
+            var tile_layer_df06976a76926b787fc3767d570130c0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2a95e0ec651aa6c0c831efd14ed786c9);
         
     
-            tile_layer_62b5f1ea0991ffaa0a388add1976db71.addTo(map_6cfa84313da79c506bcd321ec2a48485);
-        
-    
-            var feature_group_ee11e8e2f966dc094abf4af12900867f = L.featureGroup(
-                {
-}
-            );
-        
-    
-            var marker_63d1285cb6d7bdffa3550807b394d31a = L.marker(
+            var marker_6bf553c253b7ffa67360e57cffe5a811 = L.marker(
                 [-10.0, -55.0],
-                {
-}
-            ).addTo(feature_group_ee11e8e2f966dc094abf4af12900867f);
-        
-    
-            var icon_22f71f366de9ececc89c92a245c8b596 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "leaf",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_36ecea664d14bcae57478ee33061503b = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_f8974594bef249a4c3f3934b2db3c076 = $(`<div id="html_f8974594bef249a4c3f3934b2db3c076" style="width: 100.0%; height: 100.0%;"><b>Brazil</b><br>CO₂ Sequestration Potential: 1.2 Gt CO₂/year</div>`)[0];
-                popup_36ecea664d14bcae57478ee33061503b.setContent(html_f8974594bef249a4c3f3934b2db3c076);
-            
-        
-
-        marker_63d1285cb6d7bdffa3550807b394d31a.bindPopup(popup_36ecea664d14bcae57478ee33061503b)
-        ;
-
-        
-    
-    
-                marker_63d1285cb6d7bdffa3550807b394d31a.setIcon(icon_22f71f366de9ececc89c92a245c8b596);
-            
-    
-            var marker_c7c52dd4b93f20ada06278dc94942d8c = L.marker(
-                [20.0, 78.0],
-                {
-}
-            ).addTo(feature_group_ee11e8e2f966dc094abf4af12900867f);
-        
-    
-            var icon_5a5431efd7e5f78e6244eeb7a4fd7b11 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "leaf",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_52acfdbc98e9e78a3ec390fa493518f5 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_03bea233c02fd11b3585c8c5a28f842a = $(`<div id="html_03bea233c02fd11b3585c8c5a28f842a" style="width: 100.0%; height: 100.0%;"><b>India</b><br>CO₂ Sequestration Potential: 0.9 Gt CO₂/year</div>`)[0];
-                popup_52acfdbc98e9e78a3ec390fa493518f5.setContent(html_03bea233c02fd11b3585c8c5a28f842a);
-            
-        
-
-        marker_c7c52dd4b93f20ada06278dc94942d8c.bindPopup(popup_52acfdbc98e9e78a3ec390fa493518f5)
-        ;
-
-        
-    
-    
-                marker_c7c52dd4b93f20ada06278dc94942d8c.setIcon(icon_5a5431efd7e5f78e6244eeb7a4fd7b11);
-            
-    
-            var marker_5ef6a2871e9e291e037ee372a6a9bc30 = L.marker(
-                [5.0, 100.0],
-                {
-}
-            ).addTo(feature_group_ee11e8e2f966dc094abf4af12900867f);
-        
-    
-            var icon_0a707c36d6e5b9b35e8bdf849a51c0d6 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "leaf",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_09a382c9e80f91602d0b1239d895d064 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_3fad69427737650ba04d4d808a120ae5 = $(`<div id="html_3fad69427737650ba04d4d808a120ae5" style="width: 100.0%; height: 100.0%;"><b>Southeast Asia</b><br>CO₂ Sequestration Potential: 1.5 Gt CO₂/year</div>`)[0];
-                popup_09a382c9e80f91602d0b1239d895d064.setContent(html_3fad69427737650ba04d4d808a120ae5);
-            
-        
-
-        marker_5ef6a2871e9e291e037ee372a6a9bc30.bindPopup(popup_09a382c9e80f91602d0b1239d895d064)
-        ;
-
-        
-    
-    
-                marker_5ef6a2871e9e291e037ee372a6a9bc30.setIcon(icon_0a707c36d6e5b9b35e8bdf849a51c0d6);
-            
-    
-            var marker_f24e340d88d72c4193e80856e8f77881 = L.marker(
-                [35.0, 105.0],
-                {
-}
-            ).addTo(feature_group_ee11e8e2f966dc094abf4af12900867f);
-        
-    
-            var icon_4a2b1e64c2d86fc7aa8d4d3057453c56 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "leaf",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_d06953cde5d0f9f9f4d2c3bcdbc1896c = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_e93f33b47956c3b12d982a0110375537 = $(`<div id="html_e93f33b47956c3b12d982a0110375537" style="width: 100.0%; height: 100.0%;"><b>China</b><br>CO₂ Sequestration Potential: 1.1 Gt CO₂/year</div>`)[0];
-                popup_d06953cde5d0f9f9f4d2c3bcdbc1896c.setContent(html_e93f33b47956c3b12d982a0110375537);
-            
-        
-
-        marker_f24e340d88d72c4193e80856e8f77881.bindPopup(popup_d06953cde5d0f9f9f4d2c3bcdbc1896c)
-        ;
-
-        
-    
-    
-                marker_f24e340d88d72c4193e80856e8f77881.setIcon(icon_4a2b1e64c2d86fc7aa8d4d3057453c56);
-            
-    
-            var marker_af67be8443c079e5ddce52a599301a10 = L.marker(
-                [40.0, -95.0],
-                {
-}
-            ).addTo(feature_group_ee11e8e2f966dc094abf4af12900867f);
-        
-    
-            var icon_571bf4fd33f4dc569d65dffb1f2c576e = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "leaf",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_32b3216507085b6353ae5c2627a5ba4a = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_a9f96700718766c67533c19e106aab32 = $(`<div id="html_a9f96700718766c67533c19e106aab32" style="width: 100.0%; height: 100.0%;"><b>USA (Midwest)</b><br>CO₂ Sequestration Potential: 0.8 Gt CO₂/year</div>`)[0];
-                popup_32b3216507085b6353ae5c2627a5ba4a.setContent(html_a9f96700718766c67533c19e106aab32);
-            
-        
-
-        marker_af67be8443c079e5ddce52a599301a10.bindPopup(popup_32b3216507085b6353ae5c2627a5ba4a)
-        ;
-
-        
-    
-    
-                marker_af67be8443c079e5ddce52a599301a10.setIcon(icon_571bf4fd33f4dc569d65dffb1f2c576e);
-            
-    
-            var marker_85f5a247e5f606e9e5ae5eb3329d1ae2 = L.marker(
-                [51.0, 0.0],
-                {
-}
-            ).addTo(feature_group_ee11e8e2f966dc094abf4af12900867f);
-        
-    
-            var icon_53daca646d4412d71074a3d3b22cef83 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "leaf",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_364489a253db92ce1b509289d4017ba8 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_6fcccbaf74183b964abffa70f4795845 = $(`<div id="html_6fcccbaf74183b964abffa70f4795845" style="width: 100.0%; height: 100.0%;"><b>Europe (UK & France)</b><br>CO₂ Sequestration Potential: 0.7 Gt CO₂/year</div>`)[0];
-                popup_364489a253db92ce1b509289d4017ba8.setContent(html_6fcccbaf74183b964abffa70f4795845);
-            
-        
-
-        marker_85f5a247e5f606e9e5ae5eb3329d1ae2.bindPopup(popup_364489a253db92ce1b509289d4017ba8)
-        ;
-
-        
-    
-    
-                marker_85f5a247e5f606e9e5ae5eb3329d1ae2.setIcon(icon_53daca646d4412d71074a3d3b22cef83);
-            
-    
-            var marker_f8690ad67122be2c940af97bf0aab754 = L.marker(
-                [-2.0, 30.0],
-                {
-}
-            ).addTo(feature_group_ee11e8e2f966dc094abf4af12900867f);
-        
-    
-            var icon_2249c4f13939271c4f374429c73e38d8 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "leaf",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_72d6146404aa8b40b3e7e22391ced1da = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_d12d59e09ce8aa273e6033a485a77c6b = $(`<div id="html_d12d59e09ce8aa273e6033a485a77c6b" style="width: 100.0%; height: 100.0%;"><b>Sub-Saharan Africa</b><br>CO₂ Sequestration Potential: 1.3 Gt CO₂/year</div>`)[0];
-                popup_72d6146404aa8b40b3e7e22391ced1da.setContent(html_d12d59e09ce8aa273e6033a485a77c6b);
-            
-        
-
-        marker_f8690ad67122be2c940af97bf0aab754.bindPopup(popup_72d6146404aa8b40b3e7e22391ced1da)
-        ;
-
-        
-    
-    
-                marker_f8690ad67122be2c940af97bf0aab754.setIcon(icon_2249c4f13939271c4f374429c73e38d8);
-            
-    
-            feature_group_ee11e8e2f966dc094abf4af12900867f.addTo(map_6cfa84313da79c506bcd321ec2a48485);
-        
-    
-            map_6cfa84313da79c506bcd321ec2a48485.fitBounds(
-                [[-50, -130], [60, 130]],
                 {}
-            );
+            ).addTo(map_2a95e0ec651aa6c0c831efd14ed786c9);
         
+    
+            var icon_5f0ecfb32f6a06df3804422606db5185 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6bf553c253b7ffa67360e57cffe5a811.setIcon(icon_5f0ecfb32f6a06df3804422606db5185);
+        
+    
+        var popup_1cde9d1df0e7846c5b15b4a982c4487d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9462ced5d9163c8d3edd77f7c0da43a = $(`<div id="html_a9462ced5d9163c8d3edd77f7c0da43a" style="width: 100.0%; height: 100.0%;">High ERW Potential: Brazil</div>`)[0];
+            popup_1cde9d1df0e7846c5b15b4a982c4487d.setContent(html_a9462ced5d9163c8d3edd77f7c0da43a);
+        
+
+        marker_6bf553c253b7ffa67360e57cffe5a811.bindPopup(popup_1cde9d1df0e7846c5b15b4a982c4487d)
+        ;
+
+        
+    
+    
+            var marker_933a61e265282637ae9ecd74d89a50fc = L.marker(
+                [20.0, 78.0],
+                {}
+            ).addTo(map_2a95e0ec651aa6c0c831efd14ed786c9);
+        
+    
+            var icon_e7046ecb7303f03ebb26793522da9fc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_933a61e265282637ae9ecd74d89a50fc.setIcon(icon_e7046ecb7303f03ebb26793522da9fc9);
+        
+    
+        var popup_ac0892e12868de2fb0f619b46d11c13f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb0ae6736d9d60bf4d5c289820e39a34 = $(`<div id="html_cb0ae6736d9d60bf4d5c289820e39a34" style="width: 100.0%; height: 100.0%;">High ERW Potential: India</div>`)[0];
+            popup_ac0892e12868de2fb0f619b46d11c13f.setContent(html_cb0ae6736d9d60bf4d5c289820e39a34);
+        
+
+        marker_933a61e265282637ae9ecd74d89a50fc.bindPopup(popup_ac0892e12868de2fb0f619b46d11c13f)
+        ;
+
+        
+    
+    
+            var marker_7450e02ada010bcebdb7f45db60dc9e5 = L.marker(
+                [5.0, 100.0],
+                {}
+            ).addTo(map_2a95e0ec651aa6c0c831efd14ed786c9);
+        
+    
+            var icon_6dada8d5c7a0cc8ed47d489bbe10b5c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7450e02ada010bcebdb7f45db60dc9e5.setIcon(icon_6dada8d5c7a0cc8ed47d489bbe10b5c6);
+        
+    
+        var popup_d15fec5369c8808a267ac4d938506e79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc68968f4676f2c1ea18b98c387eeeb5 = $(`<div id="html_dc68968f4676f2c1ea18b98c387eeeb5" style="width: 100.0%; height: 100.0%;">High ERW Potential: Southeast Asia</div>`)[0];
+            popup_d15fec5369c8808a267ac4d938506e79.setContent(html_dc68968f4676f2c1ea18b98c387eeeb5);
+        
+
+        marker_7450e02ada010bcebdb7f45db60dc9e5.bindPopup(popup_d15fec5369c8808a267ac4d938506e79)
+        ;
+
+        
+    
+    
+            var marker_565395d1d5070fd4a13413ace5e9ee15 = L.marker(
+                [35.0, 105.0],
+                {}
+            ).addTo(map_2a95e0ec651aa6c0c831efd14ed786c9);
+        
+    
+            var icon_3b0c4d77f005315ff2de25cade9f529e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_565395d1d5070fd4a13413ace5e9ee15.setIcon(icon_3b0c4d77f005315ff2de25cade9f529e);
+        
+    
+        var popup_6e5b9a323a7ff650340d1fc6d40c9aad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9546d1b2d1339580780ed8665d7000a4 = $(`<div id="html_9546d1b2d1339580780ed8665d7000a4" style="width: 100.0%; height: 100.0%;">High ERW Potential: China</div>`)[0];
+            popup_6e5b9a323a7ff650340d1fc6d40c9aad.setContent(html_9546d1b2d1339580780ed8665d7000a4);
+        
+
+        marker_565395d1d5070fd4a13413ace5e9ee15.bindPopup(popup_6e5b9a323a7ff650340d1fc6d40c9aad)
+        ;
+
+        
+    
+    
+            var marker_21a279b395f3189686cfcd67b352f4b6 = L.marker(
+                [40.0, -95.0],
+                {}
+            ).addTo(map_2a95e0ec651aa6c0c831efd14ed786c9);
+        
+    
+            var icon_e9668e3213d93f28cae875f432643164 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_21a279b395f3189686cfcd67b352f4b6.setIcon(icon_e9668e3213d93f28cae875f432643164);
+        
+    
+        var popup_94cacc20c8e2e55c9f208195ec4a1ddd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbb293ad7d983e7709b91539028ef3f5 = $(`<div id="html_bbb293ad7d983e7709b91539028ef3f5" style="width: 100.0%; height: 100.0%;">High ERW Potential: USA (Agricultural Midwest)</div>`)[0];
+            popup_94cacc20c8e2e55c9f208195ec4a1ddd.setContent(html_bbb293ad7d983e7709b91539028ef3f5);
+        
+
+        marker_21a279b395f3189686cfcd67b352f4b6.bindPopup(popup_94cacc20c8e2e55c9f208195ec4a1ddd)
+        ;
+
+        
+    
+    
+            var marker_ab61662b6bb93efb07f62615af1c9bd2 = L.marker(
+                [51.0, 0.0],
+                {}
+            ).addTo(map_2a95e0ec651aa6c0c831efd14ed786c9);
+        
+    
+            var icon_7f709930532b0907d6a07f220a63dec3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ab61662b6bb93efb07f62615af1c9bd2.setIcon(icon_7f709930532b0907d6a07f220a63dec3);
+        
+    
+        var popup_20eff86d6aa12884b6a30f8f865df79c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be7091c7c86c95b210b556a7eb0ee9f1 = $(`<div id="html_be7091c7c86c95b210b556a7eb0ee9f1" style="width: 100.0%; height: 100.0%;">High ERW Potential: Europe (UK & France)</div>`)[0];
+            popup_20eff86d6aa12884b6a30f8f865df79c.setContent(html_be7091c7c86c95b210b556a7eb0ee9f1);
+        
+
+        marker_ab61662b6bb93efb07f62615af1c9bd2.bindPopup(popup_20eff86d6aa12884b6a30f8f865df79c)
+        ;
+
+        
+    
+    
+            var marker_ec65f543a8301c19676b51082166acc0 = L.marker(
+                [-2.0, 30.0],
+                {}
+            ).addTo(map_2a95e0ec651aa6c0c831efd14ed786c9);
+        
+    
+            var icon_b392263b1b2d700e98bd17849086ad98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ec65f543a8301c19676b51082166acc0.setIcon(icon_b392263b1b2d700e98bd17849086ad98);
+        
+    
+        var popup_b46dfbdfb68d81a1a135657518c891ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c9288653b4ce23a9481eea18f2bb7e5 = $(`<div id="html_5c9288653b4ce23a9481eea18f2bb7e5" style="width: 100.0%; height: 100.0%;">High ERW Potential: Sub-Saharan Africa</div>`)[0];
+            popup_b46dfbdfb68d81a1a135657518c891ae.setContent(html_5c9288653b4ce23a9481eea18f2bb7e5);
+        
+
+        marker_ec65f543a8301c19676b51082166acc0.bindPopup(popup_b46dfbdfb68d81a1a135657518c891ae)
+        ;
+
+        
+    
 </script>
 </html>
